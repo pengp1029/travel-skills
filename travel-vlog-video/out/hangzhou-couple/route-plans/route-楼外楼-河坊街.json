@@ -1,0 +1,11 @@
+{
+  "title": "楼外楼到河坊街",
+  "city": "杭州",
+  "segments": [
+    {
+      "from": "楼外楼",
+      "to": "河坊街",
+      "mode": "walking"
+    }
+  ]
+}

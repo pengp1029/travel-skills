@@ -1,0 +1,11 @@
+{
+  "title": "灵隐寺到永福寺",
+  "city": "杭州",
+  "segments": [
+    {
+      "from": "灵隐寺",
+      "to": "永福寺",
+      "mode": "walking"
+    }
+  ]
+}

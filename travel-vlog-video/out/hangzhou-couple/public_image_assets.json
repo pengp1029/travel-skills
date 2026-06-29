@@ -1,0 +1,108 @@
+{
+  "assets": [
+    {
+      "name": "楼外楼",
+      "query": "Hangzhou 楼外楼",
+      "source_type": "wikimedia_commons",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/楼外楼.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Lou_Wai_Lou_Restaurant%2C_Hangzhou.jpg",
+      "source_title": "File:Lou Wai Lou Restaurant, Hangzhou.jpg"
+    },
+    {
+      "name": "杭州东站",
+      "query": "Hangzhou 杭州东站",
+      "source_type": "fallback_card",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/杭州东站.png",
+      "source_url": null,
+      "source_title": null,
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+      "name": "第一天杭州东站",
+      "query": "Hangzhou 第一天杭州东站",
+      "source_type": "fallback_card_for_invalid_public_image",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/第一天杭州东站-card.png",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/CADAL06200068_%E9%9D%92%E7%94%B0%E7%B8%A3%E8%AA%8C.djvu",
+      "source_title": "File:CADAL06200068 青田縣誌.djvu",
+      "error": "public source was not a raster image usable by ffmpeg"
+    },
+    {
+      "name": "第二天龙翔桥",
+      "query": "Hangzhou 第二天龙翔桥",
+      "source_type": "fallback_card",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/第二天龙翔桥.png",
+      "source_url": null,
+      "source_title": null,
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+      "name": "永福寺",
+      "query": "Hangzhou 永福寺",
+      "source_type": "fallback_card",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/永福寺.png",
+      "source_url": null,
+      "source_title": null,
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+      "name": "苏堤",
+      "query": "Hangzhou 苏堤",
+      "source_type": "wikimedia_commons",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/苏堤.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/%E5%8C%97%E5%B1%B1%E8%B7%AF%E4%B8%8A%E7%9C%8B%E8%8B%8F%E5%A0%A4%2C_2016-03-09.jpg",
+      "source_title": "File:北山路上看苏堤, 2016-03-09.jpg"
+    },
+    {
+      "name": "雷峰塔",
+      "query": "Hangzhou 雷峰塔",
+      "source_type": "wikimedia_commons",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/雷峰塔.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Leifeng_Pagoda_%2820240729%29.jpg",
+      "source_title": "File:Leifeng Pagoda (20240729).jpg"
+    },
+    {
+      "name": "河坊街",
+      "query": "Hangzhou 河坊街",
+      "source_type": "wikimedia_commons",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/河坊街.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg",
+      "source_title": "File:Hangzhou Hefang Street 4.jpg"
+    },
+    {
+      "name": "灵隐寺",
+      "query": "Hangzhou 灵隐寺",
+      "source_type": "fallback_card",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/灵隐寺.png",
+      "source_url": null,
+      "source_title": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "name": "西湖手摇船",
+      "query": "Hangzhou 西湖手摇船",
+      "source_type": "fallback_card_for_invalid_public_image",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/西湖手摇船-card.png",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/CADAL09007832_%E6%94%BB%E5%AA%BF%E9%9B%86%C2%B7%EF%BC%88%E4%B8%80%EF%BC%89.djvu",
+      "source_title": "File:CADAL09007832 攻媿集·（一）.djvu",
+      "error": "public source was not a raster image usable by ffmpeg"
+    },
+    {
+      "name": "手摇船",
+      "query": "Hangzhou 手摇船",
+      "source_type": "fallback_card_for_invalid_public_image",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/手摇船-card.png",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/CADAL06200280_%E5%8F%A4%E6%9C%AC%E5%B0%8F%E8%AA%AA%E9%9B%86%E6%88%90%EF%BC%9A%E8%90%AC%E5%B9%B4%E6%B8%85%E5%A5%87%E6%89%8D%E6%96%B0%E5%82%B3%C2%B7%E4%B8%8B.djvu",
+      "source_title": "File:CADAL06200280 古本小說集成：萬年清奇才新傳·下.djvu",
+      "error": "public source was not a raster image usable by ffmpeg"
+    },
+    {
+      "name": "龙井村",
+      "query": "Hangzhou 龙井村",
+      "source_type": "wikimedia_commons",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/龙井村.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/20260424_Longjing_Village.jpg",
+      "source_title": "File:20260424 Longjing Village.jpg"
+    }
+  ],
+  "authorization_note": "Wikimedia Commons 图片仍需按各自页面许可进行署名/授权核对；本视频仅用于本地预览。"
+}

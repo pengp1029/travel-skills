@@ -1,0 +1,7 @@
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_001.mp4'
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_002.mp4'
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_003.mp4'
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_004.mp4'
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_005.mp4'
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_006.mp4'
+file '/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/final-filtered/work_collector-demo-vlog/segment_007.mp4'

@@ -1,0 +1,17 @@
+{
+  "skill_name": "baidu-image-downloader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "用百度图片搜索“西湖”，把前 5 个可下载图片结果保存到本地，并告诉我保存目录。",
+      "expected_output": "本地目录中有 5 个图片文件和 manifest.json，manifest 记录来源链接与保存路径。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我按关键词“机器人”下载百度图片前五张到本地文件夹。",
+      "expected_output": "本地目录中有 5 个图片文件和 manifest.json，所有图片通过文件类型验证。",
+      "files": []
+    }
+  ]
+}

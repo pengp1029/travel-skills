@@ -1,0 +1,79 @@
+{
+  "manifest": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/final_ffmpeg_manifest_public_images.json",
+  "replaced_placeholder_images": 12,
+  "used_public_images": [
+    {
+      "name": "楼外楼",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/楼外楼.jpg",
+      "source_type": "wikimedia_commons",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Lou_Wai_Lou_Restaurant%2C_Hangzhou.jpg"
+    },
+    {
+      "name": "杭州东站",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/杭州东站.png",
+      "source_type": "fallback_card",
+      "source_url": null
+    },
+    {
+      "name": "第一天杭州东站",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/第一天杭州东站-card.png",
+      "source_type": "fallback_card_for_invalid_public_image",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/CADAL06200068_%E9%9D%92%E7%94%B0%E7%B8%A3%E8%AA%8C.djvu"
+    },
+    {
+      "name": "第二天龙翔桥",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/第二天龙翔桥.png",
+      "source_type": "fallback_card",
+      "source_url": null
+    },
+    {
+      "name": "永福寺",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/永福寺.png",
+      "source_type": "fallback_card",
+      "source_url": null
+    },
+    {
+      "name": "苏堤",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/苏堤.jpg",
+      "source_type": "wikimedia_commons",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/%E5%8C%97%E5%B1%B1%E8%B7%AF%E4%B8%8A%E7%9C%8B%E8%8B%8F%E5%A0%A4%2C_2016-03-09.jpg"
+    },
+    {
+      "name": "雷峰塔",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/雷峰塔.jpg",
+      "source_type": "wikimedia_commons",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Leifeng_Pagoda_%2820240729%29.jpg"
+    },
+    {
+      "name": "河坊街",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/河坊街.jpg",
+      "source_type": "wikimedia_commons",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg"
+    },
+    {
+      "name": "灵隐寺",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/灵隐寺.png",
+      "source_type": "fallback_card",
+      "source_url": null
+    },
+    {
+      "name": "西湖手摇船",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/西湖手摇船-card.png",
+      "source_type": "fallback_card_for_invalid_public_image",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/CADAL09007832_%E6%94%BB%E5%AA%BF%E9%9B%86%C2%B7%EF%BC%88%E4%B8%80%EF%BC%89.djvu"
+    },
+    {
+      "name": "手摇船",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/手摇船-card.png",
+      "source_type": "fallback_card_for_invalid_public_image",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/CADAL06200280_%E5%8F%A4%E6%9C%AC%E5%B0%8F%E8%AA%AA%E9%9B%86%E6%88%90%EF%BC%9A%E8%90%AC%E5%B9%B4%E6%B8%85%E5%A5%87%E6%89%8D%E6%96%B0%E5%82%B3%C2%B7%E4%B8%8B.djvu"
+    },
+    {
+      "name": "龙井村",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/龙井村.jpg",
+      "source_type": "wikimedia_commons",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/20260424_Longjing_Village.jpg"
+    }
+  ],
+  "note": "Wikimedia Commons 图片仍需按来源页面许可核对；本视频仅用于本地预览。"
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><!-- REPLACE: Trip Title --></title>
+<meta name="description" content="<!-- REPLACE: Trip Description -->">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+:root { --bg:#f5f5f7; --panel:#fff; --text:#1d1d1f; --muted:#6e6e73; --blue:#007aff; --red:#ff3b30; --orange:#ff9500; --green:#34c759; --purple:#7c3aed; --line:rgba(60,60,67,.14); --shadow:0 1px 3px rgba(0,0,0,.06); }
+* { box-sizing:border-box; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.45; }
+button,a { touch-action:manipulation; -webkit-tap-highlight-color:rgba(0,122,255,.16); }
+#map { height:42vh; min-height:300px; position:sticky; top:0; z-index:1; background:#eef2f5; }
+.route-info { position:fixed; left:12px; top:12px; z-index:20; max-width:min(420px, calc(100vw - 24px)); background:rgba(255,255,255,.94); border-radius:10px; padding:10px 12px; box-shadow:0 8px 28px rgba(0,0,0,.16); color:var(--text); font-size:13px; font-weight:650; display:none; pointer-events:none; }
+.route-info b { display:block; margin-bottom:2px; font-size:14px; }
+.route-info span { color:var(--muted); }
+.route-controls { position:sticky; top:42vh; z-index:10; display:flex; gap:8px; overflow-x:auto; padding:10px 16px; background:rgba(255,255,255,.92); border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; }
+.route-controls button { flex:none; border:0; border-radius:8px; padding:8px 12px; color:white; background:var(--blue); font-weight:700; font-size:13px; cursor:pointer; }
+.route-controls button.secondary { background:#575c66; }
+.mode-tab.active { background:var(--purple); }
+.route-status { flex:none; display:flex; align-items:center; color:var(--muted); font-size:13px; font-weight:650; padding:0 2px; white-space:nowrap; }
+.tabs { display:flex; gap:8px; overflow-x:auto; padding:12px 16px; background:rgba(255,255,255,.9); position:sticky; top:calc(42vh + 49px); z-index:9; border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; }
+.tab { flex:none; border:0; border-radius:999px; padding:8px 14px; background:#e9e9ee; color:var(--muted); font-weight:650; cursor:pointer; }
+.tab.active { background:var(--blue); color:white; }
+.content { position:relative; z-index:2; max-width:760px; margin:0 auto; padding:18px 16px 40px; }
+.hero { padding:10px 0 18px; text-align:center; }
+.hero h1 { margin:0; font-size:28px; line-height:1.15; }
+.hero p { margin:8px 0 0; color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.info,.card,.summary { background:var(--panel); border-radius:10px; padding:14px; box-shadow:var(--shadow); }
+.overview-card { display:block; width:100%; border:0; text-align:left; color:inherit; font:inherit; cursor:pointer; }
+.label,.section { color:var(--muted); font-size:12px; font-weight:700; text-transform:uppercase; margin:18px 0 8px; }
+.info b { display:block; margin-top:4px; }
+.day-title h2 { margin:8px 0 2px; font-size:22px; }
+.day-title p { margin:0; color:var(--muted); }
+.timeline { position:relative; padding-left:24px; }
+.timeline:before { content:""; position:absolute; left:7px; top:8px; bottom:8px; width:2px; background:var(--line); }
+.item { position:relative; margin:0 0 10px; }
+.dot { position:absolute; left:-22px; top:18px; width:12px; height:12px; border-radius:50%; border:3px solid var(--bg); background:var(--blue); }
+.dot.food { background:var(--red); } .dot.hotel { background:var(--orange); } .dot.drink { background:var(--purple); } .dot.transport { background:var(--green); }
+.time { color:var(--muted); font-size:12px; font-weight:700; }
+.name { font-weight:750; font-size:17px; margin-top:2px; }
+.desc { color:var(--muted); margin-top:4px; }
+.links { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+.btn { border:0; border-radius:8px; padding:8px 12px; color:white; background:var(--blue); text-decoration:none; font-weight:700; font-size:13px; cursor:pointer; }
+.btn.dp { background:var(--orange); } .btn.xhs { background:#ff2442; } .btn.reserve { background:var(--green); } .btn.route { background:#575c66; }
+.transport-link { margin:0 0 10px 24px; padding:8px 10px; border:1px dashed var(--line); border-radius:8px; background:rgba(255,255,255,.72); color:var(--muted); font-size:13px; }
+.transport-link a { color:var(--blue); font-weight:750; text-decoration:none; }
+.transport-link b { color:var(--text); }
+.detail { margin-top:10px; padding-top:10px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; white-space:pre-line; }
+.item-toggle { width:100%; border:0; background:transparent; padding:0; text-align:left; color:inherit; font:inherit; cursor:pointer; }
+.card-head { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px; align-items:start; }
+.chevron { color:var(--muted); font-size:18px; line-height:1; transition:transform .18s ease; }
+.card.expanded .chevron { transform:rotate(180deg); }
+.card-body { display:none; }
+.card.expanded .card-body { display:block; }
+.leaflet-popup-content { line-height:1.45; }
+@media (max-width:700px) {
+  #map { position:relative; top:auto; height:38vh; min-height:260px; }
+  .route-controls { top:0; }
+  .tabs { top:49px; }
+}
+@media (max-width:520px) { .grid { grid-template-columns:1fr; } .hero h1 { font-size:24px; } }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="route-info" id="routeInfo"></div>
+<div class="route-controls">
+  <button type="button" onclick="onTap(event, playVisibleRoute)">播放路线</button>
+  <button type="button" class="secondary" onclick="onTap(event, drawFullVisibleRoute)">显示全程</button>
+  <button type="button" class="secondary" onclick="onTap(event, clearRoute)">清除路线</button>
+  <button type="button" class="mode-tab active" data-mode="walking" onclick="onTap(event, () => setRouteMode('walking'))">步行</button>
+  <button type="button" class="mode-tab" data-mode="transit" onclick="onTap(event, () => setRouteMode('transit'))">公交/地铁</button>
+  <button type="button" class="mode-tab" data-mode="driving" onclick="onTap(event, () => setRouteMode('driving'))">驾车</button>
+  <span class="route-status" id="routeStatus">未播放</span>
+</div>
+<div class="tabs" id="tabs"></div>
+<div class="content" id="content"></div>
+<script>
+const HOTEL = { name: 'Hotel Name', lat: 0, lng: 0 };
+const DAYS = [
+  { id: 0, label: '总览', color: '#007aff', locations: [] }
+  // Add day objects:
+  // { id: 1, label: 'D1', date: '日期', title: '主区域', color: '#ff9500', locations: [
+  //   { name:'地点', lat:30.0, lng:120.0, type:'spot', time:'10:00', desc:'说明', detail:'补充', xhsKeyword:'关键词', dianpingKeyword:'关键词', reserve:'https://...' }
+  // ]}
+];
+
+// Paste amap-route-video/out/route-spec.json here. Use --all-modes to include walking/transit/driving options.
+const ROUTE_SPEC = {
+  title: '示例路线',
+  city: '',
+  segments: []
+  // segment shape with options:
+  // { dayId:1, from:{name:'A', coordinates:[120.1,30.2]}, to:{name:'B', coordinates:[120.2,30.3]}, options:{ walking:{label:'步行', path:[[120.1,30.2],[120.2,30.3]], distanceMeters:1000, durationSeconds:900} } }
+};
+
+const ROUTE_PLAYBACK = { framesPerSegment: 480, segmentPauseMs: 650 };
+const MODE_LABELS = { walking: '步行', transit: '公交/地铁', driving: '驾车', bicycling: '骑行' };
+let currentDayId = 0;
+let currentRouteMode = 'walking';
+
+function cleanName(name) { return encodeURIComponent((name || '').replace(/（.*?）|\(.*?\)/g,'').trim()); }
+function escapeText(value) { return String(value || '').replace(/[&<>"]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s])); }
+function xhsUrl(l) { return 'https://www.xiaohongshu.com/search_result?keyword=' + cleanName(l.xhsKeyword || l.name); }
+function dpUrl(l) { return 'https://m.dianping.com/searchshop?keyword=' + cleanName(l.dianpingKeyword || l.name); }
+function mapsUrl(l) { return 'https://uri.amap.com/marker?position=' + encodeURIComponent((l.lng || '') + ',' + (l.lat || '')) + '&name=' + cleanName(l.name); }
+function routeNavUrl(from, to, mode = 'transit') {
+  const modeMap = { walking: 'walk', transit: 'bus', driving: 'car', bicycling: 'ride' };
+  return 'https://uri.amap.com/navigation?from=' + encodeURIComponent(`${from.lng},${from.lat},${from.name || ''}`) + '&to=' + encodeURIComponent(`${to.lng},${to.lat},${to.name || ''}`) + '&mode=' + (modeMap[mode] || 'bus') + '&policy=1&src=trip-map-builder&coordinate=gaode&callnative=1';
+}
+function fmtDistance(meters) { return meters >= 1000 ? (meters / 1000).toFixed(1) + ' 公里' : Math.round(meters || 0) + ' 米'; }
+function fmtDuration(seconds) { return seconds ? '约 ' + Math.round(seconds / 60) + ' 分钟' : ''; }
+function fmtCost(cost) { return cost ? ' · ' + cost + ' 元' : ''; }
+
+function overview() {
+  return `<div class="hero"><h1><!-- REPLACE: Title --></h1><p><!-- REPLACE: Subtitle --></p></div>
+  <div class="grid">
+    <div class="info"><span class="label">酒店</span><b>${HOTEL.name}</b></div>
+    <div class="info"><span class="label">天数</span><b>${Math.max(DAYS.length - 1, 0)} 天</b></div>
+  </div>
+  <div class="section">行程概览</div>
+  ${DAYS.slice(1).map(d => `<button type="button" class="card overview-card" onclick="onTap(event, () => go(${d.id}, true))"><div class="name">${d.label} · ${d.title}</div><div class="desc">${d.date || ''}</div></button>`).join('')}
+  <div class="section">提醒</div><div class="summary"><!-- REPLACE: booking/weather/payment notes --></div>`;
+}
+
+const expandedCards = new Set();
+function cardKey(dayId, section, index, l) { return [dayId, section, index, l.name || '', l.time || ''].join('|').replace(/'/g, ''); }
+function toggleCard(key) {
+  if (expandedCards.has(key)) expandedCards.delete(key);
+  else expandedCards.add(key);
+  content.innerHTML = currentDayId === 0 ? overview() : dayView(currentDayId);
+}
+function stopClick(event) { if (event) event.stopPropagation(); }
+function onTap(event, handler) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  handler();
+}
+
+function segmentPlaces(segment) { return [segment.from?.name, segment.to?.name].filter(Boolean); }
+function findSegmentByPlaceName(name) {
+  return visibleSegments().find(segment => segmentPlaces(segment).includes(name)) || (ROUTE_SPEC.segments || []).find(segment => segmentPlaces(segment).includes(name));
+}
+function findSegmentBetween(from, to, dayId = currentDayId) {
+  return (ROUTE_SPEC.segments || []).find(segment =>
+    (dayId === 0 || segment.dayId === dayId || String(segment.dayId) === String(dayId)) &&
+    segment.from?.name === from.name && segment.to?.name === to.name
+  );
+}
+function fastestOption(segment) {
+  const options = segment?.options ? Object.values(segment.options) : [segment];
+  return options
+    .filter(option => (option?.path || []).length >= 2)
+    .sort((a, b) => (a.durationSeconds || Infinity) - (b.durationSeconds || Infinity))[0] || null;
+}
+function transportLink(from, to, dayId) {
+  const segment = findSegmentBetween(from, to, dayId);
+  const option = fastestOption(segment);
+  const mode = option?.mode || Object.entries(segment?.options || {}).find(([, value]) => value === option)?.[0] || 'transit';
+  const href = routeNavUrl(from, to, mode);
+  const label = option?.label || MODE_LABELS[mode] || '高德路线';
+  const meta = option ? `${label} · ${fmtDistance(option.distanceMeters || 0)}${option.durationSeconds ? ' · ' + fmtDuration(option.durationSeconds) : ''}${fmtCost(option.cost)}` : '打开高德查看路线';
+  return `<div class="transport-link">${escapeText(from.name)} → ${escapeText(to.name)}：<b>${escapeText(meta)}</b> · <a href="${href}" target="_blank" onclick="stopClick(event)">高德交通</a></div>`;
+}
+
+function locCard(l, index, dayId, section) {
+  const cls = l.type || 'spot';
+  const key = cardKey(dayId, section, index, l);
+  const expanded = expandedCards.has(key);
+  const hasRoute = Boolean(findSegmentByPlaceName(l.name));
+  const safeName = String(l.name || '').replace(/'/g, '');
+  const ext = `<a class="btn" href="${mapsUrl(l)}" target="_blank" onclick="stopClick(event)">导航</a>` +
+    (hasRoute ? `<button type="button" class="btn route" onclick="onTap(event, () => playRouteForPlace('${safeName}'))">播放相关路线</button>` : '') +
+    ((l.type === 'food' || l.type === 'drink' || l.dianpingKeyword) ? `<a class="btn dp" href="${dpUrl(l)}" target="_blank" onclick="stopClick(event)">大众点评</a>` : '') +
+    ((l.xhsKeyword || l.xhs) ? `<a class="btn xhs" href="${l.xhs || xhsUrl(l)}" target="_blank" onclick="stopClick(event)">小红书</a>` : '') +
+    (l.reserve ? `<a class="btn reserve" href="${l.reserve}" target="_blank" onclick="stopClick(event)">预约</a>` : '');
+  return `<div class="item"><div class="dot ${cls}"></div><div class="card ${expanded ? 'expanded' : ''}">
+    <button type="button" class="item-toggle" onclick="onTap(event, () => toggleCard('${key}'))"><div class="card-head"><div><div class="time">${l.time || '备选'}</div><div class="name">${l.name}</div><div class="desc">${l.desc || ''}</div></div><div class="chevron">⌄</div></div></button>
+    <div class="card-body"><div class="links">${ext}</div>${l.detail ? `<div class="detail">${l.detail}</div>` : ''}</div>
+  </div></div>`;
+}
+
+function timelineItems(locations, dayId, section, offset = 0) {
+  return locations.map((location, index) => {
+    const next = locations[index + 1];
+    return locCard(location, index + offset, dayId, section) + (next ? transportLink(location, next, dayId) : '');
+  }).join('');
+}
+function dayView(id) {
+  const d = DAYS.find(x => x.id === id);
+  if (!d) return '';
+  const main = d.locations.filter(l => l.time !== '—');
+  const alt = d.locations.filter(l => l.time === '—');
+  return `<div class="day-title"><h2>${d.title}</h2><p>${d.date || ''}</p></div><div class="section">行程</div><div class="timeline">${timelineItems(main, id, 'main')}</div>${alt.length ? `<div class="section">备选</div><div class="timeline">${timelineItems(alt, id, 'alt', main.length)}</div>` : ''}`;
+}
+
+const map = L.map('map', { zoomControl: false }).setView([HOTEL.lat || 30.25, HOTEL.lng || 120.16], 12);
+L.control.zoom({ position:'topright' }).addTo(map);
+L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}', {
+  subdomains: ['1','2','3','4'],
+  maxZoom: 19,
+  attribution: '© 高德地图'
+}).addTo(map);
+
+let layers = [];
+let routeLayers = [];
+let routeAnimation = null;
+let routeTimeout = null;
+const routeStatus = document.getElementById('routeStatus');
+const routeInfo = document.getElementById('routeInfo');
+function lngLatToLatLng(point) { return [point[1], point[0]]; }
+function statusText(text) { routeStatus.textContent = text; }
+function routeBounds(items) { return items.flatMap(item => (item.option?.path || []).map(lngLatToLatLng)); }
+
+function routeOption(segment, mode = currentRouteMode, allowFallback = false) {
+  if (segment.options?.[mode]) return segment.options[mode];
+  if (!allowFallback && segment.options) return null;
+  if (segment.options?.walking) return segment.options.walking;
+  if (segment.options?.transit) return segment.options.transit;
+  if (segment.options?.driving) return segment.options.driving;
+  return segment;
+}
+function visibleSegments() {
+  const segments = ROUTE_SPEC.segments || [];
+  if (currentDayId === 0) return segments;
+  return segments.filter(segment => segment.dayId === currentDayId || String(segment.dayId) === String(currentDayId));
+}
+function routeSpecFromVisible() { return { title: ROUTE_SPEC.title, segments: visibleSegments() }; }
+function selectedSegments(routeSpec = ROUTE_SPEC, allowFallback = false) {
+  return (routeSpec.segments || [])
+    .map(segment => {
+      const option = routeOption(segment, currentRouteMode, allowFallback);
+      return { segment, option, mode: option ? currentRouteMode : '' };
+    })
+    .filter(item => (item.option?.path || []).length >= 2);
+}
+function fastestSegments(routeSpec = ROUTE_SPEC) {
+  return (routeSpec.segments || [])
+    .map(segment => {
+      const entries = segment.options ? Object.entries(segment.options) : [[segment.mode || 'route', segment]];
+      const [mode, option] = entries
+        .filter(([, value]) => (value?.path || []).length >= 2)
+        .sort((a, b) => (a[1].durationSeconds || Infinity) - (b[1].durationSeconds || Infinity))[0] || [];
+      return { segment, option, mode };
+    })
+    .filter(item => item.option);
+}
+function updateRouteInfo(segment, option, index, total) {
+  const from = escapeText(segment.from?.name || option.from?.name || '起点');
+  const to = escapeText(segment.to?.name || option.to?.name || '终点');
+  const label = escapeText(option.label || MODE_LABELS[option.mode] || MODE_LABELS[currentRouteMode] || '路线');
+  const distance = fmtDistance(option.distanceMeters || 0);
+  const duration = fmtDuration(option.durationSeconds || 0);
+  routeInfo.innerHTML = `<b>${index + 1}/${total} ${from} → ${to}</b><span>${label} · ${distance}${duration ? ' · ' + duration : ''}${fmtCost(option.cost)}</span>`;
+  routeInfo.style.display = 'block';
+}
+
+function draw(id) {
+  layers.forEach(x => map.removeLayer(x)); layers = [];
+  const points = [];
+  const days = id === 0 ? DAYS.slice(1) : DAYS.filter(d => d.id === id);
+  days.forEach(d => d.locations.forEach(l => { if (l.lat && l.lng) { points.push([l.lat,l.lng]); layers.push(L.marker([l.lat,l.lng]).addTo(map).bindPopup(`<b>${l.name}</b><br>${l.desc || ''}`)); }}));
+  if (HOTEL.lat && HOTEL.lng) { points.push([HOTEL.lat,HOTEL.lng]); layers.push(L.marker([HOTEL.lat,HOTEL.lng]).addTo(map).bindPopup(`<b>${HOTEL.name}</b>`)); }
+  if (points.length) map.fitBounds(points, { padding:[32,32], maxZoom:14 });
+}
+
+function clearRoute() {
+  if (routeAnimation) cancelAnimationFrame(routeAnimation);
+  if (routeTimeout) clearTimeout(routeTimeout);
+  routeAnimation = null;
+  routeTimeout = null;
+  routeLayers.forEach(layer => map.removeLayer(layer));
+  routeLayers = [];
+  routeInfo.style.display = 'none';
+  statusText('已清除');
+}
+
+function drawFullRoute(routeSpec = ROUTE_SPEC) {
+  clearRoute();
+  const items = fastestSegments(routeSpec);
+  const bounds = routeBounds(items);
+  items.forEach(({segment, option}, index) => {
+    const latLngs = (option.path || []).map(lngLatToLatLng);
+    routeLayers.push(L.polyline(latLngs, { color: option.color || '#1d6fea', weight: 6, opacity: .86, lineCap:'round', lineJoin:'round' }).addTo(map));
+    if (index === 0) updateRouteInfo(segment, option, index, items.length);
+  });
+  if (bounds.length) map.fitBounds(bounds, { padding:[32,32], maxZoom:15 });
+  statusText(items.length ? '已显示' + (currentDayId ? '当天' : '全程') + '最快路线' : '暂无路线数据');
+}
+function drawFullVisibleRoute() { drawFullRoute(routeSpecFromVisible()); }
+
+function playRoute(routeSpec = ROUTE_SPEC) {
+  clearRoute();
+  const items = fastestSegments(routeSpec);
+  if (!items.length) { statusText('暂无路线数据'); return; }
+  const bounds = routeBounds(items);
+  if (bounds.length) map.fitBounds(bounds, { padding:[32,32], maxZoom:15 });
+  let segmentIndex = 0;
+  let pointIndex = 1;
+  let currentLine = null;
+  let marker = null;
+
+  function startSegment() {
+    const {segment, option} = items[segmentIndex];
+    const start = lngLatToLatLng(option.path[0]);
+    currentLine = L.polyline([start], { color: option.color || '#1d6fea', weight: 7, opacity:.95, lineCap:'round', lineJoin:'round' }).addTo(map);
+    marker = L.circleMarker(start, { radius:7, color:option.color || '#1d6fea', weight:3, fillColor:'#fff', fillOpacity:1 }).addTo(map).bindPopup(segment.from?.name || option.from?.name || '起点');
+    routeLayers.push(currentLine, marker);
+    pointIndex = 1;
+    updateRouteInfo(segment, option, segmentIndex, items.length);
+    statusText((segmentIndex + 1) + '/' + items.length + ' ' + (segment.from?.name || option.from?.name || '') + ' → ' + (segment.to?.name || option.to?.name || ''));
+  }
+
+  function step() {
+    const item = items[segmentIndex];
+    if (!item) { statusText('播放完成'); return; }
+    const {segment, option} = item;
+    const path = option.path;
+    if (pointIndex < path.length) {
+      const next = lngLatToLatLng(path[pointIndex]);
+      currentLine.addLatLng(next);
+      marker.setLatLng(next);
+      pointIndex += Math.max(1, Math.ceil(path.length / ROUTE_PLAYBACK.framesPerSegment));
+      routeAnimation = requestAnimationFrame(step);
+      return;
+    }
+    marker.setLatLng(lngLatToLatLng(path[path.length - 1])).bindPopup(segment.to?.name || option.to?.name || '终点');
+    segmentIndex += 1;
+    if (segmentIndex < items.length) routeTimeout = setTimeout(() => { startSegment(); routeAnimation = requestAnimationFrame(step); }, ROUTE_PLAYBACK.segmentPauseMs);
+    else statusText('播放完成');
+  }
+
+  startSegment();
+  routeAnimation = requestAnimationFrame(step);
+}
+function playVisibleRoute() { playRoute(routeSpecFromVisible()); }
+
+function playRouteForPlace(name) {
+  const segment = findSegmentByPlaceName(name);
+  if (!segment) { statusText('没有找到相关路线'); return; }
+  playRoute({ title: name, segments: [segment] });
+}
+
+function setRouteMode(mode) {
+  currentRouteMode = mode;
+  document.querySelectorAll('.mode-tab').forEach(button => button.classList.toggle('active', button.dataset.mode === mode));
+  const items = selectedSegments(routeSpecFromVisible());
+  if (!items.length) { clearRoute(); statusText('当前分类暂无路线'); return; }
+  clearRoute();
+  const bounds = routeBounds(items);
+  items.forEach(({segment, option}, index) => {
+    routeLayers.push(L.polyline((option.path || []).map(lngLatToLatLng), { color: option.color || '#1d6fea', weight: 6, opacity:.86, lineCap:'round', lineJoin:'round' }).addTo(map));
+    if (index === 0) updateRouteInfo(segment, option, index, items.length);
+  });
+  if (bounds.length) map.fitBounds(bounds, { padding:[32,32], maxZoom:15 });
+  statusText('已显示' + (currentDayId ? '当天' : '全程') + MODE_LABELS[currentRouteMode] + '路线');
+}
+
+const tabs = document.getElementById('tabs');
+const content = document.getElementById('content');
+DAYS.forEach(d => { const b = document.createElement('button'); b.type = 'button'; b.className = 'tab'; b.textContent = d.label; b.onclick = event => onTap(event, () => go(d.id, true)); tabs.appendChild(b); });
+function go(id, shouldScroll = false) {
+  currentDayId = id;
+  [...tabs.children].forEach((b,i) => b.classList.toggle('active', DAYS[i].id === id));
+  content.innerHTML = id === 0 ? overview() : dayView(id);
+  clearRoute();
+  draw(id);
+  statusText(id === 0 ? '全程路线' : '当天路线');
+  if (shouldScroll) {
+    const y = content.getBoundingClientRect().top + window.pageYOffset - tabs.offsetHeight - 8;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
+  }
+}
+go(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "id": "route-第一天杭州东站-西湖手摇船",
+      "ok": false,
+      "returncode": 1,
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：ENGINE_RESPONSE_DATA_ERROR\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:260:18)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    },
+    {
+      "id": "route-手摇船-苏堤",
+      "ok": false,
+      "returncode": 1,
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：ENGINE_RESPONSE_DATA_ERROR\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:260:18)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    },
+    {
+      "id": "route-苏堤-雷峰塔",
+      "ok": true,
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-苏堤-雷峰塔.mp4",
+      "stdout_tail": "endered 146/150, time remaining: 0s\nRendered 147/150, time remaining: 0s\nRendered 148/150, time remaining: 0s\nRendered 149/150, time remaining: 0s\nRendered 150/150\nEncoded 7/150\nEncoded 103/150\nEncoded 150/150\n○                    /Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4 455.4 kB\n{\n  \"routeSpecPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/route-spec.json\",\n  \"outputPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4\"\n}\n"
+    },
+    {
+      "id": "route-雷峰塔-楼外楼",
+      "ok": false,
+      "returncode": 1,
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：ENGINE_RESPONSE_DATA_ERROR\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:261:16)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    },
+    {
+      "id": "route-楼外楼-河坊街",
+      "ok": false,
+      "returncode": 1,
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：ENGINE_RESPONSE_DATA_ERROR\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:260:18)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    },
+    {
+      "id": "route-第二天龙翔桥-灵隐寺",
+      "ok": false,
+      "returncode": 1,
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：CUQPS_HAS_EXCEEDED_THE_LIMIT\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:260:18)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    },
+    {
+      "id": "route-灵隐寺-永福寺",
+      "ok": false,
+      "returncode": 1,
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：CUQPS_HAS_EXCEEDED_THE_LIMIT\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:260:18)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    },
+    {
+      "id": "route-永福寺-龙井村",
+      "ok": true,
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-永福寺-龙井村.mp4",
+      "stdout_tail": "Rendered 146/150, time remaining: 0s\nRendered 147/150, time remaining: 0s\nRendered 148/150, time remaining: 0s\nRendered 149/150, time remaining: 0s\nRendered 150/150\nEncoded 23/150\nEncoded 137/150\nEncoded 150/150\n○                    /Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4 420 kB\n{\n  \"routeSpecPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/route-spec.json\",\n  \"outputPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4\"\n}\n"
+    },
+    {
+      "id": "route-龙井村-杭州东站",
+      "ok": true,
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-龙井村-杭州东站.mp4",
+      "stdout_tail": "remaining: 0s\nRendered 146/150, time remaining: 0s\nRendered 147/150, time remaining: 0s\nRendered 148/150, time remaining: 0s\nRendered 149/150, time remaining: 0s\nRendered 150/150\nEncoded 38/150\nEncoded 150/150\n○                    /Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4 704.9 kB\n{\n  \"routeSpecPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/route-spec.json\",\n  \"outputPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4\"\n}\n"
+    }
+  ]
+}

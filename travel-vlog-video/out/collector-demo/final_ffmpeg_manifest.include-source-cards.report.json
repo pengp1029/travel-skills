@@ -1,0 +1,34 @@
+{
+  "items_before": 8,
+  "items_after": 8,
+  "include_source_cards": true,
+  "kept_poi_images": [
+    {
+      "index": 2,
+      "segment_id": "poi-西湖手摇船",
+      "source_type": "source_card",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-西湖手摇船.png"
+    },
+    {
+      "index": 3,
+      "segment_id": "poi-雷峰塔",
+      "source_type": "direct_image",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-雷峰塔.png"
+    },
+    {
+      "index": 5,
+      "segment_id": "poi-楼外楼",
+      "source_type": "direct_image",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-楼外楼.png"
+    },
+    {
+      "index": 7,
+      "segment_id": "poi-河坊街",
+      "source_type": "direct_image",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-河坊街.png"
+    }
+  ],
+  "skipped_poi_images": [],
+  "missing_items": [],
+  "degraded": false
+}

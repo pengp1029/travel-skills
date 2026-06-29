@@ -1,0 +1,122 @@
+{
+  "title": "杭州 vlog 路线",
+  "routes": [
+    {
+      "id": "route-第一天杭州东站-西湖手摇船",
+      "city": "杭州",
+      "title": "第一天杭州东站到西湖手摇船",
+      "segments": [
+        {
+          "from": "第一天杭州东站",
+          "to": "西湖手摇船",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-第一天杭州东站-西湖手摇船.mp4"
+    },
+    {
+      "id": "route-手摇船-苏堤",
+      "city": "杭州",
+      "title": "手摇船到苏堤",
+      "segments": [
+        {
+          "from": "手摇船",
+          "to": "苏堤",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-手摇船-苏堤.mp4"
+    },
+    {
+      "id": "route-苏堤-雷峰塔",
+      "city": "杭州",
+      "title": "苏堤到雷峰塔",
+      "segments": [
+        {
+          "from": "苏堤",
+          "to": "雷峰塔",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-苏堤-雷峰塔.mp4"
+    },
+    {
+      "id": "route-雷峰塔-楼外楼",
+      "city": "杭州",
+      "title": "雷峰塔到楼外楼",
+      "segments": [
+        {
+          "from": "雷峰塔",
+          "to": "楼外楼",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-雷峰塔-楼外楼.mp4"
+    },
+    {
+      "id": "route-楼外楼-河坊街",
+      "city": "杭州",
+      "title": "楼外楼到河坊街",
+      "segments": [
+        {
+          "from": "楼外楼",
+          "to": "河坊街",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-楼外楼-河坊街.mp4"
+    },
+    {
+      "id": "route-第二天龙翔桥-灵隐寺",
+      "city": "杭州",
+      "title": "第二天龙翔桥到灵隐寺",
+      "segments": [
+        {
+          "from": "第二天龙翔桥",
+          "to": "灵隐寺",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-第二天龙翔桥-灵隐寺.mp4"
+    },
+    {
+      "id": "route-灵隐寺-永福寺",
+      "city": "杭州",
+      "title": "灵隐寺到永福寺",
+      "segments": [
+        {
+          "from": "灵隐寺",
+          "to": "永福寺",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-灵隐寺-永福寺.mp4"
+    },
+    {
+      "id": "route-永福寺-龙井村",
+      "city": "杭州",
+      "title": "永福寺到龙井村",
+      "segments": [
+        {
+          "from": "永福寺",
+          "to": "龙井村",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-永福寺-龙井村.mp4"
+    },
+    {
+      "id": "route-龙井村-杭州东站",
+      "city": "杭州",
+      "title": "龙井村到杭州东站",
+      "segments": [
+        {
+          "from": "龙井村",
+          "to": "杭州东站",
+          "mode": "walking"
+        }
+      ],
+      "expected_output": "route-龙井村-杭州东站.mp4"
+    }
+  ]
+}

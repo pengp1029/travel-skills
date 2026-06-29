@@ -1,0 +1,41 @@
+{
+  "model": "doubao-seedance-2-0-260128",
+  "ratio": "9:16",
+  "resolution": "720p",
+  "duration": 5,
+  "watermark": false,
+  "optional": true,
+  "usage": "optional_enhancement_after_poi_image_assets",
+  "requests": [
+    {
+      "id": "poi-南宋御街",
+      "segment_id": "poi-南宋御街",
+      "prompt": "杭州南宋御街，南宋御街 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-南宋御街.mp4",
+      "duration": 5,
+      "return_last_frame": true,
+      "optional": true,
+      "usage": "optional_enhancement_after_poi_image_assets"
+    },
+    {
+      "id": "poi-河坊街",
+      "segment_id": "poi-河坊街",
+      "prompt": "杭州河坊街，河坊街 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-河坊街.mp4",
+      "duration": 5,
+      "return_last_frame": true,
+      "optional": true,
+      "usage": "optional_enhancement_after_poi_image_assets"
+    },
+    {
+      "id": "poi-西湖",
+      "segment_id": "poi-西湖",
+      "prompt": "杭州西湖，西湖 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-西湖.mp4",
+      "duration": 5,
+      "return_last_frame": true,
+      "optional": true,
+      "usage": "optional_enhancement_after_poi_image_assets"
+    }
+  ]
+}

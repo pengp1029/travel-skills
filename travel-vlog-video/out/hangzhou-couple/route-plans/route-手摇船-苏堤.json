@@ -1,0 +1,11 @@
+{
+  "title": "手摇船到苏堤",
+  "city": "杭州",
+  "segments": [
+    {
+      "from": "手摇船",
+      "to": "苏堤",
+      "mode": "walking"
+    }
+  ]
+}

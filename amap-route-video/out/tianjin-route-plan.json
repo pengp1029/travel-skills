@@ -1,0 +1,13 @@
+{
+  "title": "天津一日游路线视频",
+  "city": "天津",
+  "segments": [
+    {"from": "天津站", "to": "世纪钟", "mode": "walking"},
+    {"from": "世纪钟", "to": "意大利风情区", "mode": "walking"},
+    {"from": "意大利风情区", "to": "狗不理包子", "mode": "walking"},
+    {"from": "狗不理包子", "to": "五大道", "mode": "walking"},
+    {"from": "五大道", "to": "古文化街", "mode": "walking"},
+    {"from": "古文化街", "to": "天津之眼", "mode": "walking"},
+    {"from": "天津之眼", "to": "天津站", "mode": "walking"}
+  ]
+}

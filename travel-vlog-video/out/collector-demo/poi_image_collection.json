@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "city": "杭州",
+  "usage": "travel_vlog_preview",
+  "max_images_per_poi": 3,
+  "xhs_enabled": true,
+  "xhs_skill_dir": "/Users/user/.openclaw/skills/xiaohongshu-skills",
+  "pois": [
+    {
+      "name": "第一天杭州东站",
+      "type": "attraction",
+      "query_terms": [
+        "杭州 第一天杭州东站 图片",
+        "杭州 第一天杭州东站 百度图片",
+        "杭州 第一天杭州东站 小红书",
+        "杭州 第一天杭州东站 大众点评",
+        "杭州 第一天杭州东站 Wikimedia Commons",
+        "杭州 第一天杭州东站 官方 图片"
+      ],
+      "direct_image_candidates": [],
+      "reference_image_candidates": [],
+      "xhs_notes": [],
+      "baidu_search_entries": [],
+      "source_urls": {
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "best_preview_image": null,
+      "license_hint": "unknown",
+      "authorized_for_publish": false,
+      "usable_for_preview": true,
+      "source_note": "当前仅生成多渠道图片搜索入口；百度/小红书等第三方图片发布前需确认授权。",
+      "degraded": true,
+      "degraded_reason": "no_verified_direct_image_candidate",
+      "warnings": [
+        "No verified direct image candidate acquired from public sources."
+      ],
+      "acquisition_errors": [
+        {
+          "source": "wikimedia_commons",
+          "query": "第一天杭州东站",
+          "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+        }
+      ]
+    },
+    {
+      "name": "西湖手摇船",
+      "type": "attraction",
+      "query_terms": [
+        "杭州 西湖手摇船 图片",
+        "杭州 西湖手摇船 百度图片",
+        "杭州 西湖手摇船 小红书",
+        "杭州 西湖手摇船 大众点评",
+        "杭州 西湖手摇船 Wikimedia Commons",
+        "杭州 西湖手摇船 官方 图片"
+      ],
+      "direct_image_candidates": [],
+      "reference_image_candidates": [],
+      "xhs_notes": [],
+      "baidu_search_entries": [],
+      "source_urls": {
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "best_preview_image": null,
+      "license_hint": "unknown",
+      "authorized_for_publish": false,
+      "usable_for_preview": true,
+      "source_note": "当前仅生成多渠道图片搜索入口；百度/小红书等第三方图片发布前需确认授权。",
+      "degraded": true,
+      "degraded_reason": "no_verified_direct_image_candidate",
+      "warnings": [
+        "No verified direct image candidate acquired from public sources."
+      ],
+      "acquisition_errors": [
+        {
+          "source": "wikimedia_commons",
+          "query": "西湖手摇船",
+          "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+        }
+      ]
+    },
+    {
+      "name": "河坊街",
+      "type": "attraction",
+      "query_terms": [
+        "杭州 河坊街 图片",
+        "杭州 河坊街 百度图片",
+        "杭州 河坊街 小红书",
+        "杭州 河坊街 大众点评",
+        "杭州 河坊街 Wikimedia Commons",
+        "杭州 河坊街 官方 图片"
+      ],
+      "direct_image_candidates": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg",
+          "source": "wikimedia_commons",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Hangzhou_Hefang_Street_4.jpg",
+          "content_type": "image/jpeg",
+          "width": 1024,
+          "height": 773,
+          "size": 561636,
+          "license_hint": "CC BY 2.0",
+          "authorized_for_publish": false,
+          "usable_for_preview": true,
+          "acquisition_method": "wikimedia_api_imageinfo",
+          "verified_at": "2026-06-28T21:25:57Z",
+          "note": "Wikimedia Commons 图片可作本地预览候选；发布前需核对许可证、署名和使用场景。"
+        }
+      ],
+      "reference_image_candidates": [],
+      "xhs_notes": [],
+      "baidu_search_entries": [],
+      "source_urls": {
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "best_preview_image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg",
+      "license_hint": "unknown",
+      "authorized_for_publish": false,
+      "usable_for_preview": true,
+      "source_note": "已获取公开来源直连图片候选；发布前仍需确认授权与署名要求。",
+      "degraded": false,
+      "degraded_reason": null,
+      "acquisition_errors": [
+        {
+          "source": "wikimedia_commons",
+          "query": "杭州 河坊街",
+          "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+        }
+      ]
+    },
+    {
+      "name": "雷峰塔",
+      "type": "attraction",
+      "query_terms": [
+        "杭州 雷峰塔 图片",
+        "杭州 雷峰塔 百度图片",
+        "杭州 雷峰塔 小红书",
+        "杭州 雷峰塔 大众点评",
+        "杭州 雷峰塔 Wikimedia Commons",
+        "杭州 雷峰塔 官方 图片"
+      ],
+      "direct_image_candidates": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg/1280px-Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg",
+          "source": "wikimedia_commons",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg",
+          "content_type": "image/jpeg",
+          "width": 1080,
+          "height": 810,
+          "size": 870290,
+          "license_hint": "CC BY 3.0",
+          "authorized_for_publish": false,
+          "usable_for_preview": true,
+          "acquisition_method": "wikimedia_api_imageinfo",
+          "verified_at": "2026-06-28T21:26:00Z",
+          "note": "Wikimedia Commons 图片可作本地预览候选；发布前需核对许可证、署名和使用场景。"
+        }
+      ],
+      "reference_image_candidates": [],
+      "xhs_notes": [],
+      "baidu_search_entries": [],
+      "source_urls": {
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "best_preview_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg/1280px-Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg",
+      "license_hint": "unknown",
+      "authorized_for_publish": false,
+      "usable_for_preview": true,
+      "source_note": "已获取公开来源直连图片候选；发布前仍需确认授权与署名要求。",
+      "degraded": false,
+      "degraded_reason": null
+    },
+    {
+      "name": "楼外楼",
+      "type": "attraction",
+      "query_terms": [
+        "杭州 楼外楼 图片",
+        "杭州 楼外楼 百度图片",
+        "杭州 楼外楼 小红书",
+        "杭州 楼外楼 大众点评",
+        "杭州 楼外楼 Wikimedia Commons",
+        "杭州 楼外楼 官方 图片"
+      ],
+      "direct_image_candidates": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg/1280px-%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg",
+          "source": "wikimedia_commons",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg",
+          "content_type": "image/jpeg",
+          "width": 1080,
+          "height": 810,
+          "size": 3142889,
+          "license_hint": "CC BY 3.0",
+          "authorized_for_publish": false,
+          "usable_for_preview": true,
+          "acquisition_method": "wikimedia_api_imageinfo",
+          "verified_at": "2026-06-28T21:26:03Z",
+          "note": "Wikimedia Commons 图片可作本地预览候选；发布前需核对许可证、署名和使用场景。"
+        }
+      ],
+      "reference_image_candidates": [],
+      "xhs_notes": [],
+      "baidu_search_entries": [],
+      "source_urls": {
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "best_preview_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg/1280px-%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg",
+      "license_hint": "unknown",
+      "authorized_for_publish": false,
+      "usable_for_preview": true,
+      "source_note": "已获取公开来源直连图片候选；发布前仍需确认授权与署名要求。",
+      "degraded": false,
+      "degraded_reason": null
+    }
+  ],
+  "travel_vlog_video_compatible": {
+    "requests": [
+      {
+        "id": "poi-第一天杭州东站",
+        "segment_id": "poi-第一天杭州东站",
+        "name": "第一天杭州东站",
+        "city": "杭州",
+        "type": "attraction",
+        "duration": 5,
+        "output": "poi-第一天杭州东站.png",
+        "direct_image_candidates": [],
+        "source_urls": {
+          "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+          "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+          "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E6%94%BB%E7%95%A5",
+          "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99",
+          "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+          "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&title=Special:MediaSearch&type=image",
+          "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+        },
+        "source_note": "当前仅生成多渠道图片搜索入口；百度/小红书等第三方图片发布前需确认授权。"
+      },
+      {
+        "id": "poi-西湖手摇船",
+        "segment_id": "poi-西湖手摇船",
+        "name": "西湖手摇船",
+        "city": "杭州",
+        "type": "attraction",
+        "duration": 5,
+        "output": "poi-西湖手摇船.png",
+        "direct_image_candidates": [],
+        "source_urls": {
+          "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+          "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+          "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E6%94%BB%E7%95%A5",
+          "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9",
+          "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+          "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9&title=Special:MediaSearch&type=image",
+          "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+        },
+        "source_note": "当前仅生成多渠道图片搜索入口；百度/小红书等第三方图片发布前需确认授权。"
+      },
+      {
+        "id": "poi-河坊街",
+        "segment_id": "poi-河坊街",
+        "name": "河坊街",
+        "city": "杭州",
+        "type": "attraction",
+        "duration": 5,
+        "output": "poi-河坊街.png",
+        "direct_image_candidates": [
+          "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg"
+        ],
+        "source_urls": {
+          "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+          "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+          "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E6%94%BB%E7%95%A5",
+          "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97",
+          "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+          "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97&title=Special:MediaSearch&type=image",
+          "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+        },
+        "source_note": "已获取公开来源直连图片候选；发布前仍需确认授权与署名要求。"
+      },
+      {
+        "id": "poi-雷峰塔",
+        "segment_id": "poi-雷峰塔",
+        "name": "雷峰塔",
+        "city": "杭州",
+        "type": "attraction",
+        "duration": 5,
+        "output": "poi-雷峰塔.png",
+        "direct_image_candidates": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg/1280px-Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg"
+        ],
+        "source_urls": {
+          "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+          "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+          "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E6%94%BB%E7%95%A5",
+          "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94",
+          "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+          "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94&title=Special:MediaSearch&type=image",
+          "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+        },
+        "source_note": "已获取公开来源直连图片候选；发布前仍需确认授权与署名要求。"
+      },
+      {
+        "id": "poi-楼外楼",
+        "segment_id": "poi-楼外楼",
+        "name": "楼外楼",
+        "city": "杭州",
+        "type": "attraction",
+        "duration": 5,
+        "output": "poi-楼外楼.png",
+        "direct_image_candidates": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg/1280px-%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg"
+        ],
+        "source_urls": {
+          "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+          "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+          "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E6%94%BB%E7%95%A5",
+          "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC",
+          "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+          "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC&title=Special:MediaSearch&type=image",
+          "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+        },
+        "source_note": "已获取公开来源直连图片候选；发布前仍需确认授权与署名要求。"
+      }
+    ]
+  },
+  "warnings": [
+    "This file contains search/source scaffolding only; it does not verify licenses or download images.",
+    "Baidu and Xiaohongshu entries are references by default and are not automatically direct image candidates.",
+    "authorized_for_publish defaults to false until each source license is checked.",
+    "Public image acquisition currently uses Wikimedia Commons only; Baidu/XHS/Dianping remain reference sources unless direct source verification is added."
+  ],
+  "public_image_acquisition": {
+    "enabled": true,
+    "sources": [
+      "wikimedia_commons"
+    ],
+    "max_images_per_poi": 1,
+    "acquired_direct_candidates": 3,
+    "verified_at": "2026-06-28T21:26:03Z"
+  }
+}

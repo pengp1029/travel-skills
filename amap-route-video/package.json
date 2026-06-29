@@ -1,0 +1,18 @@
+{
+  "name": "amap-route-video-skill",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-route-video.mjs",
+    "render": "remotion render src/index.jsx AmapSegmentedRouteVideo out/amap-segmented-route.mp4 --codec=h264 --pixel-format=yuv420p"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.363",
+    "@remotion/renderer": "^4.0.363",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "remotion": "^4.0.363"
+  },
+  "devDependencies": {}
+}

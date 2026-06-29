@@ -1,0 +1,68 @@
+{
+  "assets": [
+    {
+      "segment_id": "poi-南宋御街",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/poi-image-smoke/assets/poi-南宋御街.png",
+      "type": "image",
+      "source_type": "source_card",
+      "source": null,
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E5%8D%97%E5%AE%8B%E5%BE%A1%E8%A1%97%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E5%8D%97%E5%AE%8B%E5%BE%A1%E8%A1%97",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E5%8D%97%E5%AE%8B%E5%BE%A1%E8%A1%97%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87"
+      },
+      "authorized_for_publish": false,
+      "note": "未获取可直接下载图片，已生成非黑色参考卡片。",
+      "attempts": [
+        {
+          "candidate": "fallback_card",
+          "result": "generated_source_card"
+        }
+      ]
+    },
+    {
+      "segment_id": "poi-河坊街",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/poi-image-smoke/assets/poi-河坊街.png",
+      "type": "image",
+      "source_type": "source_card",
+      "source": null,
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87"
+      },
+      "authorized_for_publish": false,
+      "note": "未获取可直接下载图片，已生成非黑色参考卡片。",
+      "attempts": [
+        {
+          "candidate": "fallback_card",
+          "result": "generated_source_card"
+        }
+      ]
+    },
+    {
+      "segment_id": "poi-西湖",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/poi-image-smoke/assets/poi-西湖.png",
+      "type": "image",
+      "source_type": "source_card",
+      "source": null,
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87"
+      },
+      "authorized_for_publish": false,
+      "note": "未获取可直接下载图片，已生成非黑色参考卡片。",
+      "attempts": [
+        {
+          "candidate": "fallback_card",
+          "result": "generated_source_card"
+        }
+      ]
+    }
+  ],
+  "degraded": true,
+  "warnings": [
+    "部分 POI 未获取可直接下载图片，已使用非黑色参考卡片。"
+  ]
+}

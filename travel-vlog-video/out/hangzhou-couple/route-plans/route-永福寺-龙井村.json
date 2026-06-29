@@ -1,0 +1,11 @@
+{
+  "title": "永福寺到龙井村",
+  "city": "杭州",
+  "segments": [
+    {
+      "from": "永福寺",
+      "to": "龙井村",
+      "mode": "walking"
+    }
+  ]
+}

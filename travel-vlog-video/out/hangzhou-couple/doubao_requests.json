@@ -1,0 +1,105 @@
+{
+  "model": "doubao-seedance-2-0-260128",
+  "ratio": "9:16",
+  "resolution": "720p",
+  "duration": 5,
+  "watermark": false,
+  "requests": [
+    {
+      "id": "poi-楼外楼",
+      "segment_id": "poi-楼外楼",
+      "prompt": "杭州楼外楼，楼外楼 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-楼外楼.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-杭州东站",
+      "segment_id": "poi-杭州东站",
+      "prompt": "杭州杭州东站，杭州东站 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-杭州东站.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-第一天杭州东站",
+      "segment_id": "poi-第一天杭州东站",
+      "prompt": "杭州第一天杭州东站，第一天杭州东站 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-第一天杭州东站.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-第二天龙翔桥",
+      "segment_id": "poi-第二天龙翔桥",
+      "prompt": "杭州第二天龙翔桥，第二天龙翔桥 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-第二天龙翔桥.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-永福寺",
+      "segment_id": "poi-永福寺",
+      "prompt": "杭州永福寺，永福寺 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-永福寺.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-苏堤",
+      "segment_id": "poi-苏堤",
+      "prompt": "杭州苏堤，苏堤 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-苏堤.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-雷峰塔",
+      "segment_id": "poi-雷峰塔",
+      "prompt": "杭州雷峰塔，雷峰塔 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-雷峰塔.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-河坊街",
+      "segment_id": "poi-河坊街",
+      "prompt": "杭州河坊街，河坊街 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-河坊街.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-灵隐寺",
+      "segment_id": "poi-灵隐寺",
+      "prompt": "杭州灵隐寺，灵隐寺 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-灵隐寺.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-西湖手摇船",
+      "segment_id": "poi-西湖手摇船",
+      "prompt": "杭州西湖手摇船，西湖手摇船 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-西湖手摇船.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-手摇船",
+      "segment_id": "poi-手摇船",
+      "prompt": "杭州手摇船，手摇船 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-手摇船.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    },
+    {
+      "id": "poi-龙井村",
+      "segment_id": "poi-龙井村",
+      "prompt": "杭州龙井村，龙井村 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "output": "poi-龙井村.mp4",
+      "duration": 5,
+      "return_last_frame": true
+    }
+  ]
+}

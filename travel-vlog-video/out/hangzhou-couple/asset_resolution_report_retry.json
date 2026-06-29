@@ -1,0 +1,60 @@
+{
+  "degraded": true,
+  "manifest": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/final_ffmpeg_manifest_retry.json",
+  "total_items": 22,
+  "real_route_videos": 8,
+  "missing_replaced_by_placeholder": [
+    {
+      "placeholder": "PLACEHOLDER/poi-楼外楼.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-杭州东站.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-第一天杭州东站.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-第二天龙翔桥.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-永福寺.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-苏堤.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-雷峰塔.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-河坊街.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-灵隐寺.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-西湖手摇船.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-手摇船.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/poi-龙井村.mp4",
+      "reason": "doubao model not activated"
+    },
+    {
+      "placeholder": "PLACEHOLDER/route-灵隐寺-永福寺.mp4",
+      "reason": "route generation failed after retries"
+    }
+  ]
+}

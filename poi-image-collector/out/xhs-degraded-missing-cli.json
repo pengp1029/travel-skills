@@ -1,0 +1,17 @@
+{
+  "source": "xiaohongshu",
+  "city": "杭州",
+  "poi": "西湖",
+  "query": "杭州 西湖 拍照",
+  "xhs_skill_dir": "/Users/user/.openclaw/skills/not-exist-xhs",
+  "source_urls": {
+    "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%20%E6%8B%8D%E7%85%A7"
+  },
+  "xhs_notes": [],
+  "reference_image_candidates": [],
+  "degraded": true,
+  "degraded_reason": "xhs_cli_not_found",
+  "warnings": [
+    "CLI not found: /Users/user/.openclaw/skills/not-exist-xhs/scripts/cli.py"
+  ]
+}

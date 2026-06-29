@@ -1,0 +1,122 @@
+{
+  "output": "hangzhou-couple-vlog.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "image_duration": 3,
+  "items": [
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/title-001.png",
+      "type": "image",
+      "duration": 3
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-苏堤-雷峰塔.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/assets/placeholder.png",
+      "type": "image",
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-永福寺-龙井村.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-龙井村-杭州东站.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    }
+  ]
+}

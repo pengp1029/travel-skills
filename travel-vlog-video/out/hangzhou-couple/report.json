@@ -1,0 +1,17 @@
+{
+  "degraded": false,
+  "outputs": {
+    "video_script": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/video_script.json",
+    "doubao_requests": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/doubao_requests.json",
+    "amap_route_plan": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/amap_route_plan.json",
+    "intercity_transitions": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/intercity_transitions.json",
+    "ffmpeg_manifest_draft": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/ffmpeg_manifest.draft.json"
+  },
+  "counts": {
+    "segments": 22,
+    "doubao_requests": 12,
+    "amap_routes": 9,
+    "intercity_transitions": 0
+  },
+  "warnings": []
+}

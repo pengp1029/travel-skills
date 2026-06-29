@@ -1,0 +1,76 @@
+{
+  "title": "上海 → 北京 高铁路线",
+  "width": 1920,
+  "height": 1080,
+  "durationSeconds": 6,
+  "generatedAt": "2026-06-29T06:58:00.798Z",
+  "segments": [
+    {
+      "mode": "train",
+      "preferredVehicle": "train",
+      "label": "高铁",
+      "color": "#16a34a",
+      "from": {
+        "name": "上海",
+        "coordinates": [
+          121.4737,
+          31.2304
+        ]
+      },
+      "to": {
+        "name": "北京",
+        "coordinates": [
+          116.4074,
+          39.9042
+        ]
+      },
+      "path": [
+        [
+          121.4737,
+          31.2304
+        ],
+        [
+          120.5853,
+          31.2989
+        ],
+        [
+          118.7969,
+          32.0603
+        ],
+        [
+          117.1848,
+          34.2618
+        ],
+        [
+          117.1201,
+          36.6512
+        ],
+        [
+          117.2,
+          39.0842
+        ],
+        [
+          116.4074,
+          39.9042
+        ]
+      ],
+      "distanceMeters": 1211256,
+      "durationSeconds": 16593,
+      "cost": 553,
+      "steps": [
+        {
+          "mode": "高铁",
+          "text": "上海出发，沿高铁路线前进",
+          "distanceMeters": 605628
+        },
+        {
+          "mode": "高铁",
+          "text": "抵达北京",
+          "distanceMeters": 605628
+        }
+      ]
+    }
+  ],
+  "totalDistanceMeters": 1211256,
+  "totalDurationSeconds": 16593
+}

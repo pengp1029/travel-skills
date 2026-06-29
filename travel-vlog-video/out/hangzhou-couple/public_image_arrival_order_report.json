@@ -1,0 +1,88 @@
+{
+  "manifest": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/final_ffmpeg_manifest_public_images_arrival_order.json",
+  "steps": [
+    {
+      "route_id": "route-第一天杭州东站-西湖手摇船",
+      "from": "第一天杭州东站",
+      "to": "西湖手摇船",
+      "route_status": "route_video",
+      "image_status": "fallback_card_for_invalid_public_image",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/西湖手摇船-card.png"
+    },
+    {
+      "route_id": "route-手摇船-苏堤",
+      "from": "手摇船",
+      "to": "苏堤",
+      "route_status": "route_video",
+      "image_status": "wikimedia_commons",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/苏堤.jpg"
+    },
+    {
+      "route_id": "route-苏堤-雷峰塔",
+      "from": "苏堤",
+      "to": "雷峰塔",
+      "route_status": "route_video",
+      "image_status": "wikimedia_commons",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/雷峰塔.jpg"
+    },
+    {
+      "route_id": "route-雷峰塔-楼外楼",
+      "from": "雷峰塔",
+      "to": "楼外楼",
+      "route_status": "route_video",
+      "image_status": "wikimedia_commons",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/楼外楼.jpg"
+    },
+    {
+      "route_id": "route-楼外楼-河坊街",
+      "from": "楼外楼",
+      "to": "河坊街",
+      "route_status": "route_video",
+      "image_status": "wikimedia_commons",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/河坊街.jpg"
+    },
+    {
+      "route_id": "route-第二天龙翔桥-灵隐寺",
+      "from": "第二天龙翔桥",
+      "to": "灵隐寺",
+      "route_status": "route_video",
+      "image_status": "fallback_card",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/灵隐寺.png"
+    },
+    {
+      "route_id": "route-灵隐寺-永福寺",
+      "from": "灵隐寺",
+      "to": "永福寺",
+      "route_status": "missing_route_placeholder",
+      "image_status": "fallback_card",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/永福寺.png"
+    },
+    {
+      "route_id": "route-永福寺-龙井村",
+      "from": "永福寺",
+      "to": "龙井村",
+      "route_status": "route_video",
+      "image_status": "wikimedia_commons",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/龙井村.jpg"
+    },
+    {
+      "route_id": "route-龙井村-杭州东站",
+      "from": "龙井村",
+      "to": "杭州东站",
+      "route_status": "route_video",
+      "image_status": "fallback_card",
+      "image_path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/public-images/杭州东站.png"
+    }
+  ],
+  "missing_routes": [
+    "route-灵隐寺-永福寺"
+  ],
+  "missing_images": [],
+  "unused_poi_assets": [
+    "第一天杭州东站",
+    "第二天龙翔桥",
+    "手摇船"
+  ],
+  "item_count": 19,
+  "note": "Sequence is title, route, arrived destination image, repeated by amap_route_plan order."
+}

@@ -1,0 +1,11 @@
+{
+  "title": "雷峰塔到楼外楼",
+  "city": "杭州",
+  "segments": [
+    {
+      "from": "雷峰塔",
+      "to": "楼外楼",
+      "mode": "walking"
+    }
+  ]
+}

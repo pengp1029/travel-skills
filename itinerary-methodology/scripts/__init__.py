@@ -1,0 +1,1 @@
+"""Itinerary methodology script contracts."""

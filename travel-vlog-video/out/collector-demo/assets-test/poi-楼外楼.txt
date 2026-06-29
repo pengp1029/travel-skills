@@ -1,0 +1,12 @@
+POI: 楼外楼
+City: 杭州
+Type: attraction
+Visual: fallback non-black source card
+Baidu image: https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87
+Baidu web: https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87
+XHS: https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E6%94%BB%E7%95%A5
+Dianping: https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC
+Image search: https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87
+Wikimedia: https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC&title=Special:MediaSearch&type=image
+Official or encyclopedia: https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91
+第三方图片/平台入口仅作素材参考；下载和发布前需确认授权。 已通过 poi-image-collector 补充多渠道搜索入口；第三方图片发布前需确认授权。

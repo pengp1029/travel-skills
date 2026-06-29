@@ -1,0 +1,133 @@
+{
+  "assets": [
+    {
+      "segment_id": "poi-第一天杭州东站",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-第一天杭州东站.png",
+      "type": "image",
+      "source_type": "source_card",
+      "source": null,
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87",
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%9B%BE%E7%89%87",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "authorized_for_publish": false,
+      "note": "未获取可直接下载图片，已生成非黑色参考卡片。",
+      "attempts": [
+        {
+          "candidate": "fallback_card",
+          "result": "generated_source_card"
+        }
+      ]
+    },
+    {
+      "segment_id": "poi-西湖手摇船",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-西湖手摇船.png",
+      "type": "image",
+      "source_type": "source_card",
+      "source": null,
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87",
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%9B%BE%E7%89%87",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E8%A5%BF%E6%B9%96%E6%89%8B%E6%91%87%E8%88%B9%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "authorized_for_publish": false,
+      "note": "未获取可直接下载图片，已生成非黑色参考卡片。",
+      "attempts": [
+        {
+          "candidate": "fallback_card",
+          "result": "generated_source_card"
+        }
+      ]
+    },
+    {
+      "segment_id": "poi-河坊街",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-河坊街.png",
+      "type": "image",
+      "source_type": "direct_image",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg",
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87",
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%9B%BE%E7%89%87",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%B2%B3%E5%9D%8A%E8%A1%97%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "authorized_for_publish": false,
+      "note": "已使用候选图片；发布前仍需确认图片授权。",
+      "attempts": [
+        {
+          "candidate": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg",
+          "result": "downloaded_direct_image"
+        }
+      ]
+    },
+    {
+      "segment_id": "poi-雷峰塔",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-雷峰塔.png",
+      "type": "image",
+      "source_type": "direct_image",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg/1280px-Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg",
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87",
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%9B%BE%E7%89%87",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E9%9B%B7%E5%B3%B0%E5%A1%94%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "authorized_for_publish": false,
+      "note": "已使用候选图片；发布前仍需确认图片授权。",
+      "attempts": [
+        {
+          "candidate": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg/1280px-Leifeng_Pagoda_%E9%9B%B7%E5%B3%B0%E5%A1%94_-_panoramio.jpg",
+          "result": "downloaded_direct_image"
+        }
+      ]
+    },
+    {
+      "segment_id": "poi-楼外楼",
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/assets/poi-楼外楼.png",
+      "type": "image",
+      "source_type": "direct_image",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg/1280px-%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg",
+      "source_urls": {
+        "xhs": "https://www.xiaohongshu.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E6%94%BB%E7%95%A5",
+        "dianping": "https://www.dianping.com/search/keyword/1/0_%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC",
+        "image_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E6%99%AF%E7%82%B9%20%E5%9B%BE%E7%89%87",
+        "browser_search": "https://www.bing.com/images/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+        "baidu_image": "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+        "baidu_web": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%9B%BE%E7%89%87",
+        "wikimedia": "https://commons.wikimedia.org/w/index.php?search=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC&title=Special:MediaSearch&type=image",
+        "official_or_encyclopedia": "https://www.bing.com/search?q=%E6%9D%AD%E5%B7%9E%20%E6%A5%BC%E5%A4%96%E6%A5%BC%20%E5%AE%98%E6%96%B9%20%E5%9B%BE%E7%89%87%20%E7%99%BE%E7%A7%91"
+      },
+      "authorized_for_publish": false,
+      "note": "已使用候选图片；发布前仍需确认图片授权。",
+      "attempts": [
+        {
+          "candidate": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg/1280px-%E6%9D%AD%E5%B7%9E%E6%A5%BC%E5%A4%96%E6%A5%BC%E9%A3%9F%E5%93%81%E5%8E%82_-_panoramio.jpg",
+          "result": "downloaded_direct_image"
+        }
+      ]
+    }
+  ],
+  "degraded": true,
+  "warnings": [
+    "部分 POI 未获取可直接下载图片，已使用非黑色参考卡片。"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "output": "travel-vlog.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "image_duration": 3,
+  "items": [
+    {
+      "path": "PLACEHOLDER/title-001.png",
+      "type": "image",
+      "duration": 3
+    },
+    {
+      "path": "PLACEHOLDER/poi-楼外楼.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-杭州东站.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-第一天杭州东站.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-第二天龙翔桥.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-永福寺.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-苏堤.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-雷峰塔.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-河坊街.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-灵隐寺.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-西湖手摇船.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-手摇船.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/poi-龙井村.mp4",
+      "type": "video",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/route-第一天杭州东站-西湖手摇船.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-手摇船-苏堤.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-苏堤-雷峰塔.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-雷峰塔-楼外楼.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-楼外楼-河坊街.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-第二天龙翔桥-灵隐寺.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-灵隐寺-永福寺.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-永福寺-龙井村.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/route-龙井村-杭州东站.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    }
+  ]
+}

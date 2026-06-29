@@ -1,0 +1,69 @@
+{
+  "title": "杭州 vlog",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "ratio": "9:16",
+  "segments": [
+    {
+      "id": "title-001",
+      "kind": "title",
+      "duration_sec": 3,
+      "caption": "杭州 vlog",
+      "visual": "标题卡 + 城市氛围",
+      "asset_policy": "template_or_image"
+    },
+    {
+      "id": "poi-河坊街",
+      "kind": "poi-image",
+      "duration_sec": 5,
+      "caption": "河坊街",
+      "visual": "杭州河坊街 图片素材卡 / 景点氛围图",
+      "asset_policy": "prefer_user_image_then_direct_image_then_source_card"
+    },
+    {
+      "id": "poi-西湖",
+      "kind": "poi-image",
+      "duration_sec": 5,
+      "caption": "西湖",
+      "visual": "杭州西湖 图片素材卡 / 景点氛围图",
+      "asset_policy": "prefer_user_image_then_direct_image_then_source_card"
+    },
+    {
+      "id": "poi-南宋御街",
+      "kind": "poi-image",
+      "duration_sec": 5,
+      "caption": "南宋御街",
+      "visual": "杭州南宋御街 图片素材卡 / 景点氛围图",
+      "asset_policy": "prefer_user_image_then_direct_image_then_source_card"
+    },
+    {
+      "id": "route-西湖-河坊街",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "西湖 → 河坊街",
+      "visual": "高德路线动画：西湖 到 河坊街",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "西湖",
+        "to": "河坊街",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-河坊街-南宋御街",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "河坊街 → 南宋御街",
+      "visual": "高德路线动画：河坊街 到 南宋御街",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "河坊街",
+        "to": "南宋御街",
+        "mode": "walking"
+      }
+    }
+  ]
+}

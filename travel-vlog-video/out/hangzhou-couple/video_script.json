@@ -1,0 +1,239 @@
+{
+  "title": "杭州 vlog",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "ratio": "9:16",
+  "segments": [
+    {
+      "id": "title-001",
+      "kind": "title",
+      "duration_sec": 3,
+      "caption": "杭州 vlog",
+      "visual": "标题卡 + 城市氛围",
+      "asset_policy": "template_or_image"
+    },
+    {
+      "id": "poi-楼外楼",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "楼外楼",
+      "visual": "杭州楼外楼，楼外楼 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-杭州东站",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "杭州东站",
+      "visual": "杭州杭州东站，杭州东站 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-第一天杭州东站",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "第一天杭州东站",
+      "visual": "杭州第一天杭州东站，第一天杭州东站 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-第二天龙翔桥",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "第二天龙翔桥",
+      "visual": "杭州第二天龙翔桥，第二天龙翔桥 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-永福寺",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "永福寺",
+      "visual": "杭州永福寺，永福寺 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-苏堤",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "苏堤",
+      "visual": "杭州苏堤，苏堤 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-雷峰塔",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "雷峰塔",
+      "visual": "杭州雷峰塔，雷峰塔 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-河坊街",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "河坊街",
+      "visual": "杭州河坊街，河坊街 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-灵隐寺",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "灵隐寺",
+      "visual": "杭州灵隐寺，灵隐寺 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-西湖手摇船",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "西湖手摇船",
+      "visual": "杭州西湖手摇船，西湖手摇船 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-手摇船",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "手摇船",
+      "visual": "杭州手摇船，手摇船 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "poi-龙井村",
+      "kind": "doubao-video",
+      "duration_sec": 5,
+      "caption": "龙井村",
+      "visual": "杭州龙井村，龙井村 游玩片段，游客自然游玩，景点氛围真实，轻快旅行 vlog 风格，手机竖屏，手持镜头缓慢推进",
+      "asset_policy": "prefer_user_asset_then_doubao_then_placeholder"
+    },
+    {
+      "id": "route-第一天杭州东站-西湖手摇船",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "第一天杭州东站 → 西湖手摇船",
+      "visual": "高德路线动画：第一天杭州东站 到 西湖手摇船",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "第一天杭州东站",
+        "to": "西湖手摇船",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-手摇船-苏堤",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "手摇船 → 苏堤",
+      "visual": "高德路线动画：手摇船 到 苏堤",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "手摇船",
+        "to": "苏堤",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-苏堤-雷峰塔",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "苏堤 → 雷峰塔",
+      "visual": "高德路线动画：苏堤 到 雷峰塔",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "苏堤",
+        "to": "雷峰塔",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-雷峰塔-楼外楼",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "雷峰塔 → 楼外楼",
+      "visual": "高德路线动画：雷峰塔 到 楼外楼",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "雷峰塔",
+        "to": "楼外楼",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-楼外楼-河坊街",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "楼外楼 → 河坊街",
+      "visual": "高德路线动画：楼外楼 到 河坊街",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "楼外楼",
+        "to": "河坊街",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-第二天龙翔桥-灵隐寺",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "第二天龙翔桥 → 灵隐寺",
+      "visual": "高德路线动画：第二天龙翔桥 到 灵隐寺",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "第二天龙翔桥",
+        "to": "灵隐寺",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-灵隐寺-永福寺",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "灵隐寺 → 永福寺",
+      "visual": "高德路线动画：灵隐寺 到 永福寺",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "灵隐寺",
+        "to": "永福寺",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-永福寺-龙井村",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "永福寺 → 龙井村",
+      "visual": "高德路线动画：永福寺 到 龙井村",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "永福寺",
+        "to": "龙井村",
+        "mode": "walking"
+      }
+    },
+    {
+      "id": "route-龙井村-杭州东站",
+      "kind": "amap-route-video",
+      "duration_sec": 8,
+      "caption": "龙井村 → 杭州东站",
+      "visual": "高德路线动画：龙井村 到 杭州东站",
+      "asset_policy": "amap-route-video",
+      "route": {
+        "city": "杭州",
+        "from": "龙井村",
+        "to": "杭州东站",
+        "mode": "walking"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "degraded": true,
+  "outputs": {
+    "video_script": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/video_script.json",
+    "poi_image_requests": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/poi_image_requests.json",
+    "doubao_requests": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/doubao_requests.json",
+    "amap_route_plan": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/amap_route_plan.json",
+    "intercity_transitions": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/intercity_transitions.json",
+    "ffmpeg_manifest_draft": "/Users/user/.openclaw/skills/travel-vlog-video/out/collector-demo/ffmpeg_manifest.draft.json"
+  },
+  "counts": {
+    "segments": 10,
+    "poi_image_requests": 5,
+    "doubao_requests": 5,
+    "amap_routes": 4,
+    "intercity_transitions": 0
+  },
+  "sequence_policy": "route_then_arrived_destination_poi_image",
+  "extra_poi_ids": [
+    "poi-第一天杭州东站"
+  ],
+  "missing_destination_pois": [],
+  "warnings": [
+    "以下 POI 未作为路线目的地插入主序列：poi-第一天杭州东站。"
+  ]
+}

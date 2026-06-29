@@ -1,0 +1,21 @@
+{
+  "concurrency": 1,
+  "sleep_seconds_between_calls": 15,
+  "results": [
+    {
+      "id": "route-第二天龙翔桥-灵隐寺",
+      "ok": true,
+      "path": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-videos/route-第二天龙翔桥-灵隐寺.mp4",
+      "retry_input": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-retry-plans-2/route-第二天龙翔桥-灵隐寺.json",
+      "stdout_tail": "0s\nRendered 143/150, time remaining: 0s\nRendered 144/150, time remaining: 0s\nRendered 145/150, time remaining: 0s\nRendered 146/150, time remaining: 0s\nRendered 147/150, time remaining: 0s\nRendered 148/150, time remaining: 0s\nRendered 149/150, time remaining: 0s\nRendered 150/150\nEncoded 76/150\nEncoded 150/150\n○                    /Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4 599.4 kB\n{\n  \"routeSpecPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/route-spec.json\",\n  \"outputPath\": \"/Users/user/.openclaw/skills/amap-route-video/out/amap-segmented-route.mp4\"\n}\n"
+    },
+    {
+      "id": "route-灵隐寺-永福寺",
+      "ok": false,
+      "returncode": 1,
+      "retry_input": "/Users/user/.openclaw/skills/travel-vlog-video/out/hangzhou-couple/route-retry-plans-2/route-灵隐寺-永福寺.json",
+      "stdout_tail": "",
+      "stderr_tail": "file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27\n    throw new Error(`高德接口错误：${data.info || data.message || text}`);\n          ^\n\nError: 高德接口错误：ENGINE_RESPONSE_DATA_ERROR\n    at requestJson (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:27:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async geocodePlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:89:16)\n    at async getPlace (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:237:57)\n    at async buildRouteSpec (file:///Users/user/.openclaw/skills/amap-route-video/scripts/amap-route-client.mjs:261:16)\n    at async file:///Users/user/.openclaw/skills/amap-route-video/scripts/generate-route-video.mjs:68:144\n\nNode.js v24.6.0\n"
+    }
+  ]
+}

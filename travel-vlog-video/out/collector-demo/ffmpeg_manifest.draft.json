@@ -1,0 +1,58 @@
+{
+  "output": "travel-vlog.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "image_duration": 3,
+  "items": [
+    {
+      "path": "PLACEHOLDER/title-001.png",
+      "type": "image",
+      "duration": 3
+    },
+    {
+      "path": "PLACEHOLDER/route-第一天杭州东站-西湖手摇船.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/poi-西湖手摇船.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/route-西湖手摇船-雷峰塔.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/poi-雷峰塔.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/route-雷峰塔-楼外楼.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/poi-楼外楼.png",
+      "type": "image",
+      "duration": 5
+    },
+    {
+      "path": "PLACEHOLDER/route-楼外楼-河坊街.mp4",
+      "type": "video",
+      "start": 0,
+      "duration": 8
+    },
+    {
+      "path": "PLACEHOLDER/poi-河坊街.png",
+      "type": "image",
+      "duration": 5
+    }
+  ]
+}
