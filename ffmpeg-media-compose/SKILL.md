@@ -18,7 +18,7 @@ metadata:
 
 ## Environment
 
-At the start of every skill run, load environment variables from `/Users/user/.openclaw/.env` if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
+At the start of every skill run, load environment variables from `$OPENCLAW_HOME/.env` (defaults to `~/.openclaw/.env`) if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
 
 Use this skill to concatenate videos and images into a single MP4 with FFmpeg.
 

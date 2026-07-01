@@ -10,11 +10,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 from typing import Any, Dict, List
+
+OPENCLAW_HOME = Path(os.environ.get("OPENCLAW_HOME") or (Path.home() / ".openclaw"))
+DEFAULT_COLLECTOR_SCRIPT = str(OPENCLAW_HOME / "skills/poi-image-collector/scripts/build_image_requests.py")
+DEFAULT_ACQUISITION_SCRIPT = str(OPENCLAW_HOME / "skills/poi-image-collector/scripts/acquire_public_images.py")
+DEFAULT_XHS_SKILL_DIR = str(OPENCLAW_HOME / "skills/xiaohongshu-skills")
 
 
 def dedupe_strings(values: List[Any]) -> List[str]:
@@ -188,12 +194,12 @@ def build_enriched_manifest(manifest: Dict[str, Any], collection: Dict[str, Any]
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Enrich POI image requests with poi-image-collector output.")
     parser.add_argument("--manifest", required=True, help="Input travel-vlog-video poi_image_requests.json")
-    parser.add_argument("--collector-script", default="/Users/user/.openclaw/skills/poi-image-collector/scripts/build_image_requests.py", help="poi-image-collector build_image_requests.py")
-    parser.add_argument("--acquisition-script", default="/Users/user/.openclaw/skills/poi-image-collector/scripts/acquire_public_images.py", help="Optional public image acquisition script")
+    parser.add_argument("--collector-script", default=DEFAULT_COLLECTOR_SCRIPT, help="poi-image-collector build_image_requests.py")
+    parser.add_argument("--acquisition-script", default=DEFAULT_ACQUISITION_SCRIPT, help="Optional public image acquisition script")
     parser.add_argument("--acquire-public-images", dest="acquire_public_images", action="store_true", default=True, help="Acquire verified public direct image candidates after building the collection")
     parser.add_argument("--no-acquire-public-images", dest="acquire_public_images", action="store_false", help="Skip public direct image acquisition")
     parser.add_argument("--max-images-per-poi", type=int, default=2, help="Maximum public direct image candidates to acquire per POI")
-    parser.add_argument("--xhs-skill-dir", default="/Users/user/.openclaw/skills/xiaohongshu-skills", help="Optional xiaohongshu-skills directory")
+    parser.add_argument("--xhs-skill-dir", default=DEFAULT_XHS_SKILL_DIR, help="Optional xiaohongshu-skills directory")
     parser.add_argument("--city", default=None, help="Override city")
     parser.add_argument("--out-manifest", required=True, help="Output enriched manifest path")
     parser.add_argument("--out-collection", required=True, help="Output collector collection JSON path")

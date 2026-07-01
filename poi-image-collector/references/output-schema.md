@@ -14,7 +14,7 @@
   "usage": "travel_vlog_preview",
   "max_images_per_poi": 3,
   "xhs_enabled": true,
-  "xhs_skill_dir": "/Users/user/.openclaw/skills/xiaohongshu-skills",
+  "xhs_skill_dir": "$HOME/.openclaw/skills/xiaohongshu-skills",
   "pois": [
     {
       "name": "西湖",

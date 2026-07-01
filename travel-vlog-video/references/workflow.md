@@ -223,7 +223,7 @@ Use `--include-source-cards` only when the user explicitly wants source-card pla
 Use `ffmpeg-media-compose` with the filtered manifest:
 
 ```bash
-python3 /Users/user/.openclaw/skills/ffmpeg-media-compose/scripts/compose_media.py \
+python3 $HOME/.openclaw/skills/ffmpeg-media-compose/scripts/compose_media.py \
   --manifest out/my-trip/final_ffmpeg_manifest.filtered.json \
   --out-dir out/my-trip/final
 ```

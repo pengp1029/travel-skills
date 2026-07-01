@@ -39,6 +39,30 @@ TRAVEL_SKILL_REQUEST_TIMEOUT=10
 WEB_SEARCH_BASE_URL=https://api.duckduckgo.com/
 ```
 
+> ⚠️ **密钥需自行准备（Bring Your Own Keys）**
+>
+> 本仓库**不包含任何真实的 API Key、AK/SK、Token 或账号凭证**，上面的变量均为空占位符，需你自行申请并填入。
+>
+> - `AMAP_KEY`：高德开放平台 Web 服务 Key，用于地理编码、POI 搜索和路线规划（<https://lbs.amap.com/>）。部分 skill 也支持 `AMAP_WEB_SERVICE_KEY`。
+> - `WEATHER_KEY`：和风天气 API Key，用于天气摘要（<https://dev.qweather.com/>）。
+>
+> **请勿将密钥硬编码进代码或提交到仓库。** 推荐将上述变量写入本地 `.env` 文件（例如 `~/.openclaw/.env`），各 skill 会在运行时自动加载；`.env` 文件应通过 `.gitignore` 排除，切勿提交。运行时工具只会读取环境变量，绝不会打印密钥值。
+
+### Skill 安装路径（OPENCLAW_HOME）
+
+各 skill 及其脚本默认安装在 `~/.openclaw/skills/` 下（例如 `~/.openclaw/skills/travel-skill/`、`~/.openclaw/skills/xiaohongshu-skills/`）。仓库内的脚本与文档不再硬编码任何绝对路径，而是按如下顺序解析根目录：
+
+1. 环境变量 `OPENCLAW_HOME`（若已设置）；
+2. 否则回退到当前用户主目录下的 `~/.openclaw`。
+
+如果你把 skill 安装到了非默认位置，只需设置 `OPENCLAW_HOME` 即可，无需改动任何脚本：
+
+```bash
+export OPENCLAW_HOME="/your/custom/openclaw"
+```
+
+文档示例命令中出现的 `$HOME/.openclaw/...` 或 `$HOME/.comate/...` 均为占位路径，请按你的实际安装位置替换。脚本命令行参数（如 `--xhs-skill-dir`、`--collector-script`）的默认值也会据此自动推导。
+
 For `train-query`, install Python dependencies:
 
 ```bash

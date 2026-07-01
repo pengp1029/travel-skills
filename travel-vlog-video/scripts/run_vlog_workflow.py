@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-ROOT = Path("/Users/user/.openclaw")
+ROOT = Path(os.environ.get("OPENCLAW_HOME") or (Path.home() / ".openclaw"))
 TRAVEL_SKILL = ROOT / "skills/travel-vlog-video"
 AMAP_SKILL = ROOT / "skills/amap-route-video"
 COMPOSE_SCRIPT = ROOT / "skills/ffmpeg-media-compose/scripts/compose_media.py"

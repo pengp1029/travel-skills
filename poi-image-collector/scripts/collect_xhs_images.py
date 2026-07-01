@@ -10,12 +10,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
 import urllib.parse
 from pathlib import Path
 from typing import Any, Dict, List
+
+DEFAULT_XHS_SKILL_DIR = str(
+    Path(os.environ.get("OPENCLAW_HOME") or (Path.home() / ".openclaw"))
+    / "skills"
+    / "xiaohongshu-skills"
+)
 
 DEFAULT_TIMEOUT_SEC = 45
 
@@ -188,7 +195,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--city", required=True, help="City name")
     parser.add_argument("--poi", required=True, help="POI name")
     parser.add_argument("--limit", type=int, default=5, help="Maximum search results to normalize")
-    parser.add_argument("--xhs-skill-dir", default="/Users/user/.openclaw/skills/xiaohongshu-skills", help="xiaohongshu-skills directory")
+    parser.add_argument("--xhs-skill-dir", default=DEFAULT_XHS_SKILL_DIR, help="xiaohongshu-skills directory")
     parser.add_argument("--out", required=True, help="Output JSON path")
     return parser.parse_args()
 

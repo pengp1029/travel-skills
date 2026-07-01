@@ -19,7 +19,7 @@ metadata:
 
 ## Environment
 
-At the start of every skill run, load environment variables from `/Users/user/.openclaw/.env` if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
+At the start of every skill run, load environment variables from `$OPENCLAW_HOME/.env` (defaults to `~/.openclaw/.env`) if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
 
 你是群聊专用的多人旅行规划助手。目标不是简单平均每个人的喜好，而是在明确的群聊上下文中，在可执行、公平、低冲突的前提下，为群成员推荐同城聚会地点、下午/晚上活动动线，或异地共同旅游城市。
 
@@ -66,11 +66,11 @@ At the start of every skill run, load environment variables from `/Users/user/.o
 3. 召回用户画像
    - 对每个参与人调用：
      ```bash
-     python3 /Users/user/.openclaw/skills/travel-skill/scripts/memory.py --user-id FEISHU_ID show-preferences
+     python3 $HOME/.openclaw/skills/travel-skill/scripts/memory.py --user-id FEISHU_ID show-preferences
      ```
    - 如果需要历史计划参考，再调用：
      ```bash
-     python3 /Users/user/.openclaw/skills/travel-skill/scripts/memory.py --user-id FEISHU_ID recall --query '城市 时段 多人 偏好关键词'
+     python3 $HOME/.openclaw/skills/travel-skill/scripts/memory.py --user-id FEISHU_ID recall --query '城市 时段 多人 偏好关键词'
      ```
    - 如果请求中出现新的稳定偏好，可逐用户调用 `extract-preferences` 沉淀。
 

@@ -20,7 +20,7 @@ metadata:
 
 ## Environment
 
-At the start of every skill run, load environment variables from `/Users/user/.openclaw/.env` if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
+At the start of every skill run, load environment variables from `$OPENCLAW_HOME/.env` (defaults to `~/.openclaw/.env`) if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
 
 你是端到端旅行地图构建助手。工作流是 **Plan -> Research -> Build**：先做参考行程，再用大众点评和小红书补充餐饮/体验信号，最后生成手机可打开的交互式地图页面。不要把 HTML 当成默认第一步；只有当天气、住宿/集合点、出行方式、食物安排、美景/体验点、节奏预算和关键偏好已经稳定或用户明确接受当前假设时，才进入 Build。
 

@@ -45,14 +45,14 @@ Respect all Dianping login, captcha, and anti-abuse boundaries.
 Use `xiaohongshu-skills` only for read-only search and browsing:
 
 ```bash
-cd /Users/user/.openclaw/skills/xiaohongshu-skills
+cd $HOME/.openclaw/skills/xiaohongshu-skills
 uv run python scripts/cli.py search-feeds --keyword "杭州 西湖 拍照" --note-type 图文
 ```
 
 For normalized POI image references, prefer the wrapper:
 
 ```bash
-python3 /Users/user/.openclaw/skills/poi-image-collector/scripts/collect_xhs_images.py \
+python3 $HOME/.openclaw/skills/poi-image-collector/scripts/collect_xhs_images.py \
   --city 杭州 \
   --poi 西湖 \
   --out /tmp/xhs-west-lake.json
@@ -84,7 +84,7 @@ Use these as no-login discovery links for Chinese POIs. Baidu entries help users
 After `build_image_requests.py` creates a baseline collection, run `acquire_public_images.py` when downstream tools need real preview images instead of source cards:
 
 ```bash
-python3 /Users/user/.openclaw/skills/poi-image-collector/scripts/acquire_public_images.py \
+python3 $HOME/.openclaw/skills/poi-image-collector/scripts/acquire_public_images.py \
   --collection /tmp/poi_image_collection.json \
   --out /tmp/poi_image_collection.json \
   --max-images-per-poi 2

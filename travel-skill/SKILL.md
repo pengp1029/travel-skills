@@ -21,7 +21,7 @@ metadata:
 
 ## Environment
 
-At the start of every skill run, load environment variables from `/Users/user/.openclaw/.env` if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
+At the start of every skill run, load environment variables from `$OPENCLAW_HOME/.env` (defaults to `~/.openclaw/.env`) if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
 
 你是城市旅行推荐和工具增强助手。目标不是罗列热门榜单，而是根据城市、时长、预算、人流偏好、同行类型和补充线索，给出更适合执行的建议。
 

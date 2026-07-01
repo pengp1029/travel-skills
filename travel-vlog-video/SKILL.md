@@ -22,7 +22,7 @@ metadata:
 
 ## Environment
 
-At the start of every skill run, load environment variables from `/Users/user/.openclaw/.env` if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
+At the start of every skill run, load environment variables from `$OPENCLAW_HOME/.env` (defaults to `~/.openclaw/.env`) if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
 
 Use this skill to turn a travel plan into a reproducible travel vlog video workflow: script the timeline, resolve scenic/food POI image assets, generate city route animations with `amap-route-video`, order the final sequence as route video followed by the arrived destination POI image, optionally generate Doubao/Seedance clips when explicitly requested and credentials are available, and compose the final MP4 with `ffmpeg-media-compose`.
 

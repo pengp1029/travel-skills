@@ -1,0 +1,29 @@
+# --- Secrets / credentials (NEVER commit) ---
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+*secret*
+*.credential
+
+# --- Dependencies ---
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Build / cache ---
+.cache/
+dist/
+build/
+*.log
+
+# --- OS ---
+.DS_Store

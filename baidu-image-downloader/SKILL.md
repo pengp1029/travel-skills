@@ -7,7 +7,7 @@ description: Use this skill whenever the user wants to download images from Baid
 
 ## Environment
 
-At the start of every skill run, load environment variables from `/Users/user/.openclaw/.env` if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
+At the start of every skill run, load environment variables from `$OPENCLAW_HOME/.env` (defaults to `~/.openclaw/.env`) if the file exists, before running any bundled script, CLI, browser automation, or network request. Do not print secret values.
 
 Use this skill to turn a search keyword into local image files from Baidu Images. Prefer the bundled script over hand-written ad hoc scraping because Baidu image pages often contain escaped JSON, multiple URL fields, and anti-hotlink behavior; the script handles retries, file type detection, and verification consistently.
 
@@ -18,7 +18,7 @@ Use this skill to turn a search keyword into local image files from Baidu Images
 3. Run the bundled downloader:
 
 ```bash
-python /Users/user/.comate/skills/baidu-image-downloader/scripts/baidu_image_downloader.py \
+python $HOME/.comate/skills/baidu-image-downloader/scripts/baidu_image_downloader.py \
   --keyword "<keyword>" \
   --count 5 \
   --output-dir "<output-dir>"
@@ -46,11 +46,11 @@ The script writes:
 Download the first five Baidu image results for West Lake:
 
 ```bash
-python /Users/user/.comate/skills/baidu-image-downloader/scripts/baidu_image_downloader.py --keyword "西湖" --count 5 --output-dir "$HOME/Downloads/baidu-image-downloads/xihu"
+python $HOME/.comate/skills/baidu-image-downloader/scripts/baidu_image_downloader.py --keyword "西湖" --count 5 --output-dir "$HOME/Downloads/baidu-image-downloads/xihu"
 ```
 
 Download eight robot images:
 
 ```bash
-python /Users/user/.comate/skills/baidu-image-downloader/scripts/baidu_image_downloader.py --keyword "机器人" --count 8 --output-dir "$HOME/Downloads/baidu-image-downloads/robot"
+python $HOME/.comate/skills/baidu-image-downloader/scripts/baidu_image_downloader.py --keyword "机器人" --count 8 --output-dir "$HOME/Downloads/baidu-image-downloads/robot"
 ```
